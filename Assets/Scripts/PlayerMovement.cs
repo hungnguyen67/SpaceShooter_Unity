@@ -2,33 +2,22 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Vector3 targetPosition;
-    private float speed = 10f;
+    public float speed = 15f;
 
     void Update()
     {
-        HandleInput();
-        MovePlayer();
-    }
+        // Cách đúng cho Orthographic camera (2D)
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0f;  // rất quan trọng – giữ Z = 0
 
-    void HandleInput()
-    {
-        if (Input.GetMouseButton(0))
-        {
-            Vector3 mousePos = Input.mousePosition;
-            mousePos.z = 10f;
+        // Clamp để không ra khỏi màn hình
+        mousePos.x = Mathf.Clamp(mousePos.x, -2.3f, 2.3f);
+        mousePos.y = Mathf.Clamp(mousePos.y, -4.5f, 4.5f);
 
-            targetPosition = Camera.main.ScreenToWorldPoint(mousePos);
-            targetPosition.x = Mathf.Clamp(targetPosition.x, -2.3f, 2.3f);
-            targetPosition.y = Mathf.Clamp(targetPosition.y, -4.5f, 4.5f);
-        }
-    }
-
-    void MovePlayer()
-    {
+        // Di chuyển mượt
         transform.position = Vector3.Lerp(
             transform.position,
-            targetPosition,
+            mousePos,
             speed * Time.deltaTime
         );
     }
