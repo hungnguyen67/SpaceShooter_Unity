@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: b39088e98bc966b478409c135d9e0bf0
+  productGUID: ec5270b254c420f41a6eb660dae3c767
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: SPACE SHOOTER
+  productName: Main
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -166,7 +166,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.DefaultCompany.SPACESHOOTER
+    Android: com.DefaultCompany.Main
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -892,14 +892,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: SPACE SHOOTER
+  metroPackageName: Main
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: SPACE SHOOTER
+  metroApplicationDescription: Main
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -973,10 +973,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: a418a3bf-21fa-45df-8e27-5ac0715b7fba
+  cloudProjectId: 5a838241-21fd-4d4a-8331-37af362cdb09
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: SPACE SHOOTER
+  projectName: Main
   organizationId: hungnn91296
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
