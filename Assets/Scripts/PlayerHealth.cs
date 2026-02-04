@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class EnemyHealth : Health
+public class PlayerHealth : Health
 {
     protected override void Die()
     {
         base.Die(); // Chạy lệnh nổ và hủy của lớp cha
-        Debug.Log("Kẻ địch đã bị tiêu diệt!");
+        Debug.Log("GAME OVER: Người chơi đã chết!");
     }
 }

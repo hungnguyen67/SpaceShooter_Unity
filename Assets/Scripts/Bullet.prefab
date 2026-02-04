@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6823110370680290487}
   - component: {fileID: 361400842716282960}
-  - component: {fileID: 702009351611828045}
   - component: {fileID: 5938645832152109153}
   - component: {fileID: -4969070856815304463}
+  - component: {fileID: -2856015673175070840}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -94,19 +94,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &702009351611828045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8716103404788031558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e90c20b090912e24984734829e03cee4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  flySpeed: 10
 --- !u!61 &5938645832152109153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -180,3 +167,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-2856015673175070840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8716103404788031558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90c20b090912e24984734829e03cee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bullet
+  flySpeed: 10
+  damage: 10
